@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img class="leftCurtain">
+        <img class="rightCurtain">
+        <a href="index.html">
+            <img src="./assets/Logo.png" class="logo" >
+        </a>
+        <div class="dataContainer">
+            <div class="count">
+                <div class="titleContainer">
+                    <p class="mainTitle">
+                        Under construction
+                    </p>
+                    <p class="titleDescription">
+                        We're making lots of improvements and will be back soon
+                    </p>
+                </div>
+                <div class="dateContainer">
+                    <div class="dateChildContainer">
+                        <p class="days"></p>
+                        <div class="date">
+                            <p class="daysTitle"></p>
+                        </div>
+                    </div>
+                    <div class="dateChildContainer">
+                        <p class="hours"></p>
+                        <div class="date">
+                            <p class="hoursTitle"></p>
+                        </div>
+                    </div>
+                    <div class="dateChildContainer">
+                        <p class="minutes"></p>
+                        <div class="date">
+                            <p class="minutesTitle"></p>
+                        </div>
+                    </div>
+                    <div class="dateChildContainer">
+                        <p class="seconds"></p>
+                        <div class="date">
+                            <p class="secondsTitle"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eventContainer">
+                <p class="eventDescription">Check out event page when you wait</p>
+                <button class="eventButton" onclick="window.location.href='https://www.w3docs.com';">
+                    <p class="eventTitle" >Go to the event</p>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16669 10H15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 4.16666L15.8333 9.99999L10 15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>     
+                </button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="emailNotification">
+                <input type="text" id="emailInput" onfocus="ClearInput()" class="emailInput" placeholder="Enter your Email and get notified"></input>
+                <button class="sendEmailButton" onclick="ValidateEmail()"></button>
+            </div>
+        </div>
+        <div id='popup' class="popupContainer popupClose">
+            <div class="popup">
+                <button class="popupcross" onclick="ClosePopup()"></button>
+                <div class="popupBody">
+                    <p id="popupTitle" class="popupTitle"></p>
+                    <p id="popupDescription" class="popupDescription"></p>
+                    <button class="popupCloseButton" onclick="ClosePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
